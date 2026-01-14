@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Página 1</title>
-
-  <!-- ESSENCIAL PARA CELULAR -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signum Fidei</title>
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      text-align: center;
-      font-family: Arial, sans-serif;
     }
 
-    img {
+    .container {
+      position: relative;
       width: 100%;
-      height: auto;
+      max-width: 430px; /* largura de celular */
+      margin: auto;
+    }
+
+    .container img {
+      width: 100%;
       display: block;
     }
 
-    .botao {
-      display: inline-block;
-      margin: 20px;
-      padding: 15px 25px;
-      background: #8b0000;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
+    /* HITBOX ORAÇÕES */
+    .btn-oracoes {
+      position: absolute;
+      top: 55%;      /* AJUSTE FINO */
+      left: 5%;      /* AJUSTE FINO */
+      width: 42%;    /* AJUSTE FINO */
+      height: 14%;   /* AJUSTE FINO */
+      background: rgba(255, 0, 0, 0.35);
+      cursor: pointer;
     }
   </style>
 </head>
 
 <body>
 
-  <img src="Signum fidei_20260114_001527_0000.png" alt="Página 1">
+  <div class="container">
+    <img src="Signum_fidei_20260114_001527_0000.png" alt="Página inicial">
 
-  <a class="botao" href="pagina2.html">
-    Ir para a Página 2 →
-  </a>
+    <a href="pagina2.html" class="btn-oracoes"></a>
+  </div>
 
 </body>
 </html>
