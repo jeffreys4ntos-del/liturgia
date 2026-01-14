@@ -3,33 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Página 1</title>
-  <img src="Signum fidei_20260114_001527_0000.png" width="300">
+
+  <!-- ESSENCIAL PARA CELULAR -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
+      margin: 0;
+      padding: 0;
       text-align: center;
       font-family: Arial, sans-serif;
     }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     .botao {
       display: inline-block;
-      margin-top: 20px;
+      margin: 20px;
       padding: 15px 25px;
       background: #8b0000;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 18px;
+      font-size: 16px;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Página 1</h1>
+  <img src="Signum fidei_20260114_001527_0000.png" alt="Página 1">
 
-<p>Essa é a primeira página do site.</p>
-
-<a class="botao" href="pagina2.html">
-  Ir para a Página 2 →
-</a>
+  <a class="botao" href="pagina2.html">
+    Ir para a Página 2 →
+  </a>
 
 </body>
 </html>
