@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Signum Fidei</title>
 
 <style>
@@ -16,7 +18,7 @@
   }
 
   .container img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: block;
   }
@@ -27,7 +29,24 @@
     left: 6%;
     width: 38%;
     height: 14%;
-    background: rgba(255, 0, 0, 0.15); /* ajuste visual */
+
+    /* visual temporário para ajuste */
+    background: rgba(255, 0, 0, 0.15);
+
+    /* 🔴 REMOVE O AZUL */
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn-oracoes:visited {
+    color: transparent;
+  }
+
+  .btn-oracoes:active,
+  .btn-oracoes:focus {
+    outline: none;
+    background: rgba(255, 0, 0, 0.15);
   }
 </style>
 </head>
